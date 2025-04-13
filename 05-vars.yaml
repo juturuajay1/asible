@@ -6,6 +6,9 @@
     duration: 120HRS
     Trainer: Siva
   tasks:
-  - name: print the variables
-    ansible.builtin.debug:
-      msg: "I am doing {{COURSE}} and duration was {{duration}}"
+    - name: print the variables
+      ansible.builtin.debug:
+        msg: "I am doing {{COURSE}} and duration was {{duration}}"
+    - name: print the variables
+      ansible.builtin.debug:
+        msg: "I am doing {{COURSE}} and duration was {{duration}}, the trainer was {{Trainer}}"
