@@ -13,7 +13,7 @@
       ansible.builtin.debug:
       vars:
          Trainer: Ajay
-        msg: "I am doing {{COURSE}} and duration was {{duration}}, the trainer was {{Trainer}}"
+           msg: "I am doing {{COURSE}} and duration was {{duration}}, the trainer was {{Trainer}}"
 
 - name: Variable
   hosts: local
@@ -24,4 +24,4 @@
       vars:
         COURSE: "Devops with AWS"
         duration: 100HRS
-        msg: "I am doing {{COURSE}} and duration was {{duration}}, the trainer was {{Trainer}}"
+           msg: "I am doing {{COURSE}} and duration was {{duration}}, the trainer was {{Trainer}}"
