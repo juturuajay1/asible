@@ -10,9 +10,9 @@
       ansible.builtin.debug:
         msg: "I am doing {{COURSE}} and duration was {{duration}}"
     - name: print the variables
-      ansible.builtin.debug:
       vars:
          Trainer: Ajay
+      ansible.builtin.debug:
            msg: "I am doing {{COURSE}} and duration was {{duration}}, the trainer was {{Trainer}}"
 
 - name: Variable
@@ -20,8 +20,8 @@
   connection: local
   tasks:
     - name: print the variables
-      ansible.builtin.debug:
       vars:
         COURSE: "Devops with AWS"
         duration: 100HRS
+      ansible.builtin.debug:
            msg: "I am doing {{COURSE}} and duration was {{duration}}, the trainer was {{Trainer}}"
