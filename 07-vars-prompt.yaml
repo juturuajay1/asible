@@ -2,15 +2,17 @@
   hosts: local
   connection: local
   vars_prompt:
-  - name: Course
-    prompt: Please enter the course name
-  - name: duration
-    prompt: Enter duration period
-  - name: Username
-    prompt: Enter username
-  - name: password
-    prompt: Enter password
+    - name: COURSE
+      prompt: Please enter the course name
+      private: false #it is not confidential, so you can see the text in prompt
+    - name: duration
+      prompt: Enter duration period
+      private: false
+    - name: Username
+      prompt: Enter username
+      private: false
+    - name: password
+      prompt: Enter password
   tasks:
-  - name: Enter the variables
-    ansible.builtin.debug:
-      msg:"I am doing {{COURSE}} and duration was {{duration}}, the trainer was {{Username}}"
+    - name: Enter the variables
+      ansible.builtin.debug: msg:"I am doing {{COURSE}} and duration was {{duration}}, the trainer was {{Username}}"
