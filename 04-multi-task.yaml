@@ -6,7 +6,7 @@
     ansible.builtin.debug:
       msg: "message from task1"
 
-- name: play2
+- name: play1
   hosts: local
   connection: local
   tasks:
