@@ -15,4 +15,5 @@
       prompt: Enter password
   tasks:
     - name: Enter the variables
-      ansible.builtin.debug: msg:"I am doing {{COURSE}} and duration was {{duration}}, the trainer was {{Username}}"
+      ansible.builtin.debug: 
+         msg:"I am doing {{COURSE}} and duration was {{duration}}, the trainer was {{Username}}"
