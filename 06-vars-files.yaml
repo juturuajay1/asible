@@ -1,7 +1,7 @@
 - name: ansible
   hosts: local
   connection: local
-  vars:
+  vars_files:
   - variables.yaml
   tasks:
   - name: print course information
@@ -10,4 +10,3 @@
 
 
 
-       
