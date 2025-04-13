@@ -5,9 +5,6 @@
     - name: COURSE
       prompt: Please enter the course name
       private: false #it is not confidential, so you can see the text in prompt
-    - name: duration
-      prompt: Enter duration period
-      private: false
     - name: Username
       prompt: Enter username
       private: false
@@ -16,4 +13,4 @@
   tasks:
     - name: Enter the variables
       ansible.builtin.debug: 
-         msg: "I am doing {{COURSE}} and duration was {{duration}}, the trainer was {{Username}} and {{password}}"
+         msg: "I am doing {{COURSE}} and duration was {{duration}}, the trainer was {{Username}}"
