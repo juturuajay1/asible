@@ -1,3 +1,6 @@
 - name: ansible
   hosts: web
-  local
+  tasks:
+  - name: print the variables
+    ansible.builtin.debug:
+      msg: "I am doing {{COURSE}} and duration was {{duration}}, the trainer was {{Trainer}}"
